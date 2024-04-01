@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem de casas decimais</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body> <!--Fundo (corpo)-->
+    <header> <!--Titulo (cabeçalho)-->
+        <h1>Calculando</h1>
+    </header>
+    <section id="tab">
+        <div>
+            <p>Número: <input type="number" id="txtn" name="txtn">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+           </div>
+           <div>
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option>
+            </select>
+            <p id="p">Tabuada</p>
+           </div>
+    </section>
+    <section id="contagem"> <!--Conteudo de Dentro-->
+        <div>
+            <p>Inicio: <input type="number" name="inicio" id="txti"></p>
+            <p>Fim: <input  type="number" name="fim" id="txtf"></p>
+            <p>Passo: <input type="number" name="passo"  id="txtp"></p>
+            <p><input type="button" value="Contar" onclick="contar()"></p>
+            </div>
+       <div id="res">
+        Preparando a contagem...
+       </div>
+    </section>
+    <footer> <!--Parte final-->
+        <p>&copy;CursoemVideo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte</title>
+</head>
+<body>
+    <h1>Sistemas de Busca de Naturalidade</h1>
+    Naturalidade: <input type="text" name="país" id="país">
+    <input type="button" value="Verificar" onclick="buscar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function buscar() {
+            var txtp=window.document.querySelector('input#país').value;
+            var res = window.document.querySelector('div#res');
+            if (txtp == "Brasil") {
+            res.innerHTML = `<p> <strong>${txtp}</strong> Você é Brasileiro </p>`;
+            }
+            if (txtp != "Brasil") {
+                res.innerHTML += `<p><strong>${txtp}</strong> Você é Estrangeiro</p>`;
+            }
+            res.innerHTML += '<p> Seja bem Vindo!</p>';
+        }
+    </script>
+</body>
+</html>
